@@ -1,0 +1,47 @@
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 24px;
+
+  /* default when the author omits a colour; an authored colour overrides it */
+  background-color: var(--banner-bg, blue);
+  color: var(--background-color);
+}
+
+/* dark variant: authored as `Banner (dark)`. Text colour is inherited from
+   the base `.banner` rule; only the default background changes. */
+.banner.dark {
+  background-color: var(--banner-bg, var(--text-color));
+}
+
+.banner .banner-image {
+  flex: 1 1 300px;
+  line-height: 0;
+}
+
+.banner .banner-image:empty {
+  display: none;
+}
+
+.banner .banner-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.banner .banner-content {
+  flex: 1 1 300px;
+}
+
+.banner .banner-title {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .banner {
+    padding: 48px 32px;
+  }
+}

@@ -323,3 +323,10 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* authored as Section Metadata "Style: Light Grey" — a clearly grey band */
+main .section.light-grey {
+  background-color: #d3d3d3;
+  margin: 0;
+  padding: 40px 0;
+}

@@ -1,0 +1,74 @@
+/* Note / Alert block — adapted from kronnox/extra-block-collection (Block Party).
+   Self-contained palette + CSS-glyph icons (no external SVG assets). */
+
+.note {
+  --note-fg: #084298;
+  --note-bg: #cfe2ff;
+  --note-glyph: "\2139"; /* ℹ info */
+
+  display: flex;
+  gap: 16px;
+  padding: 16px 22px;
+  border-radius: 8px;
+  background-color: var(--note-bg);
+  color: var(--note-fg);
+}
+
+.note .note-body {
+  flex: 1;
+}
+
+.note p {
+  margin: 0;
+}
+
+.note p + p {
+  margin-top: 8px;
+}
+
+.note p.note-heading {
+  font-weight: 600;
+}
+
+.note a:any-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.note .note-icon {
+  flex-shrink: 0;
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+}
+
+.note .note-icon::before {
+  content: var(--note-glyph);
+}
+
+/* variants */
+.note.warning {
+  --note-fg: #664d03;
+  --note-bg: #fff3cd;
+  --note-glyph: "\26A0"; /* ⚠ */
+}
+
+.note.error {
+  --note-fg: #842029;
+  --note-bg: #f8d7da;
+  --note-glyph: "\2715"; /* ✕ */
+}
+
+.note.success {
+  --note-fg: #0f5132;
+  --note-bg: #d1e7dd;
+  --note-glyph: "\2713"; /* ✓ */
+}
+
+/* modifiers */
+.note.accent-border {
+  border-left: 6px solid var(--note-fg);
+}
+
+.note.no-icon .note-icon {
+  display: none;
+}
