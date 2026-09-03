@@ -1,0 +1,47 @@
+/* Ported from hlxsites/wknd blocks/breadcrumb, adapted to this project's
+   tokens and a path-derived trail. */
+
+.breadcrumb nav {
+  font-size: var(--body-font-size-xs);
+}
+
+.breadcrumb ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  padding: 10px 5px;
+  text-transform: uppercase;
+}
+
+.breadcrumb li:first-child {
+  padding-left: 0;
+}
+
+.breadcrumb li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li[aria-current="page"] {
+  color: var(--dark-color);
+}
+
+.breadcrumb li::before {
+  content: "\25B6"; /* ▶ separator */
+  padding-right: 5px;
+  color: var(--link-color);
+  font-size: 0.8em;
+}
+
+.breadcrumb li:first-child::before {
+  content: none;
+}
