@@ -1,0 +1,32 @@
+/*
+ * Spec block — clean key/value specification table.
+ * Inherits the site design tokens from styles/styles.css.
+ */
+.spec {
+  margin: 1.5rem 0;
+  border-top: 1px solid var(--dark-color);
+}
+
+.spec .spec-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.spec .spec-label {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.spec .spec-value {
+  color: var(--text-color);
+}
+
+@media (width < 600px) {
+  .spec .spec-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

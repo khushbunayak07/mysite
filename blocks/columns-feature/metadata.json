@@ -1,0 +1,41 @@
+{
+  "variantName": "columns-feature",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-09-07T18:07:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd-trendsetters.site/",
+    "originPage": "landing-page representative",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "feature",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image | breadcrumb + heading + author meta",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "featured teaser with a single large image beside text",
+      "side-by-side informational layouts"
+    ],
+    "notSuitableFor": [
+      "repeating card grids",
+      "interactive components"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index",
+      "/blog",
+      "/fashion-trends-young-adults-casual-sport"
+    ],
+    "reuseCount": 3,
+    "lastUsed": "2026-09-07T18:41:00.000Z"
+  }
+}
