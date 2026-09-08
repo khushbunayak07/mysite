@@ -41,14 +41,46 @@
       min-height: calc(100vh - var(--nav-height));
       display: flex;
       align-items: center;
+      text-align: center;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    main.error .section {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px;
     }
 
     main.error .error-number {
       width: 100%;
+      max-width: 420px;
     }
 
     main.error .error-number text {
-      font-family: monospace;
+      font-family: var(--heading-font-family), monospace;
+      font-weight: 700;
+      fill: var(--text-color);
+    }
+
+    main.error .error-message {
+      margin: 0.25em 0;
+      font-size: var(--heading-font-size-l);
+      color: var(--text-color);
+    }
+
+    main.error .error-detail {
+      margin: 0 0 1.5em;
+      font-size: var(--body-font-size-m);
+      color: var(--dark-color);
+    }
+
+    main.error .button-container {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   </style>
   <link rel="stylesheet" href="/styles/lazy-styles.css">
@@ -62,6 +94,7 @@
         <text x="0" y="17">404</text>
       </svg>
       <h2 class="error-message">Page Not Found</h2>
+      <p class="error-detail">Sorry, we couldn&rsquo;t find the page you were looking for. It may have been moved, unpublished, or the link might be broken.</p>
       <p class="button-container">
         <a href="/" class="button secondary error-button-home">Go home</a>
       </p>
