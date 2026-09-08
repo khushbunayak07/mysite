@@ -1,0 +1,14 @@
+{
+  "type": "da",
+  "sites": {
+    "mysite": {
+      "previewOrg": "khushbunayak07",
+      "previewSite": "mysite",
+      "contentHostUrl": "https://content.da.live/khushbunayak07/mysite/",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  },
+  "features": [
+    "site-planning"
+  ]
+}

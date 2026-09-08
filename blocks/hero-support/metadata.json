@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-support",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-09-07T18:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd-trendsetters.site/faq",
+    "originPage": "FAQ / support page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "support-hero",
+    "imagePattern": "single-side"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + paragraph | single side image",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "FAQ / support page headers",
+      "informational page intros with a single supporting image beside heading + intro copy",
+      "light-background hero headers without CTAs"
+    ],
+    "notSuitableFor": [
+      "landing hero sections needing an image cluster and CTAs (use hero-gallery)",
+      "dark full-bleed CTA banners with a background image (use hero-overlay)",
+      "article mastheads with breadcrumbs/byline/date/category metadata (use hero-article)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/faq"],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-07T18:38:00.000Z"
+  }
+}

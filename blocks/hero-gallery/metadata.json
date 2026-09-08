@@ -1,0 +1,40 @@
+{
+  "variantName": "hero-gallery",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-09-07T18:07:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd-trendsetters.site/",
+    "originPage": "landing-page representative",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "hero",
+    "imagePattern": "cluster"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + 2 CTAs + image cluster",
+    "buttonCount": 2,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "landing page intros with a side image group",
+      "marketing hero sections on light backgrounds"
+    ],
+    "notSuitableFor": [
+      "full-bleed overlay banners",
+      "text-only heroes"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index",
+      "/fashion-trends-young-adults-casual-sport"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-09-07T18:41:00.000Z"
+  }
+}

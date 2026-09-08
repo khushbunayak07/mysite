@@ -1,0 +1,110 @@
+/* ==========================================================================
+   hero-gallery — split hero: text column + 3-image cluster.
+   Matches wknd-trendsetters.site: light-grey band, black uppercase heading,
+   two pill CTAs, image cluster on the right. Uses migrated design tokens.
+   ========================================================================== */
+
+.hero-gallery-container .hero-gallery-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* content column (2nd DOM row) sits first (left) on desktop */
+.hero-gallery > div:last-child {
+  order: -1;
+}
+
+.hero-gallery h1,
+.hero-gallery h2 {
+  margin: 0;
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  text-transform: uppercase;
+  letter-spacing: var(--heading-letter-spacing);
+  line-height: 1.1;
+}
+
+.hero-gallery p {
+  color: var(--text-color);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height);
+  margin: 24px 0 0;
+}
+
+/* CTA links -> pill buttons (source: black pill, white text, hard shadow) */
+.hero-gallery p:has(> a) {
+  display: inline-block;
+  margin: 24px 12px 0 0;
+}
+
+.hero-gallery a.button,
+.hero-gallery p > a:only-child {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-color);
+  color: #fff;
+  border: 2px solid var(--dark-color);
+  border-radius: 2em;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: var(--body-font-size-s);
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 4px 4px 0 0 var(--dark-color);
+}
+
+.hero-gallery a.button:hover,
+.hero-gallery p > a:only-child:hover {
+  background-color: #333;
+}
+
+/* image cluster (first DOM row): 2-column grid of cover images.
+   Pictures may sit directly in the div or be wrapped in a <p>; target both. */
+.hero-gallery > div:first-child > div,
+.hero-gallery > div:first-child > div > p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0;
+}
+
+.hero-gallery picture {
+  line-height: 0;
+}
+
+.hero-gallery img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* a lone 3rd image spans the full cluster width, kept to a wide banner ratio */
+.hero-gallery picture:nth-child(3):last-child {
+  grid-column: 1 / -1;
+}
+
+.hero-gallery picture:nth-child(3):last-child img {
+  aspect-ratio: 2 / 1;
+}
+
+@media (width >= 900px) {
+  .hero-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    padding: 0 32px;
+  }
+}

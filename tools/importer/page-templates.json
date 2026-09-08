@@ -1,0 +1,381 @@
+{
+  "templates": [
+    {
+      "name": "landing-page",
+      "urls": [
+        "https://wknd-trendsetters.site/"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing landing layout: hero banner followed by multiple alternating content sections (feature grids, tabs, callouts) and a closing CTA",
+      "blocks": [
+        {
+          "name": "hero-gallery",
+          "instances": [
+            "#main-content > header.section.secondary-section"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            "#main-content > section.section:nth-of-type(1)"
+          ]
+        },
+        {
+          "name": "cards-gallery",
+          "instances": [
+            "#main-content > section.section.secondary-section:nth-of-type(2) .grid-layout.grid-gap-sm"
+          ]
+        },
+        {
+          "name": "tabs-testimonial",
+          "instances": [
+            "#main-content > section.section:nth-of-type(3) .tabs-wrapper"
+          ]
+        },
+        {
+          "name": "cards-article",
+          "instances": [
+            "#main-content > section.section.secondary-section:nth-of-type(4) .grid-layout.grid-gap-md"
+          ]
+        },
+        {
+          "name": "accordion-faq",
+          "instances": [
+            "#main-content > section.section:nth-of-type(5) .faq-list"
+          ]
+        },
+        {
+          "name": "hero-overlay",
+          "instances": [
+            "#main-content > section.section.inverse-section"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "#main-content > header.section.secondary-section",
+          "style": "grey",
+          "blocks": [
+            "hero-gallery"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Featured case study",
+          "selector": "#main-content > section.section:nth-of-type(1)",
+          "style": "light",
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Gallery",
+          "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+          "style": "grey",
+          "blocks": [
+            "cards-gallery"
+          ],
+          "defaultContent": [
+            "#main-content > section.section.secondary-section:nth-of-type(2) .utility-text-align-center"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Testimonials",
+          "selector": "#main-content > section.section:nth-of-type(3)",
+          "style": "light",
+          "blocks": [
+            "tabs-testimonial"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Latest articles",
+          "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+          "style": "grey",
+          "blocks": [
+            "cards-article"
+          ],
+          "defaultContent": [
+            "#main-content > section.section.secondary-section:nth-of-type(4) .utility-text-align-center"
+          ]
+        },
+        {
+          "id": "section-6",
+          "name": "FAQ",
+          "selector": "#main-content > section.section:nth-of-type(5)",
+          "style": "light",
+          "blocks": [
+            "accordion-faq"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Closing CTA",
+          "selector": "#main-content > section.section.inverse-section",
+          "style": "dark",
+          "blocks": [
+            "hero-overlay"
+          ],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "content-listing",
+      "urls": [
+        "https://wknd-trendsetters.site/blog"
+      ],
+      "coverageGaps": [],
+      "description": "Index/listing layout: hero header above a repeating grid of card teasers linking to detail pages",
+      "blocks": [
+        {
+          "name": "columns-feature",
+          "instances": [
+            "#main-content > section.section:nth-of-type(1)"
+          ]
+        },
+        {
+          "name": "cards-article",
+          "instances": [
+            "#articles .grid-layout.grid-gap-md"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Blog hero header",
+          "selector": "#main-content > header.section.secondary-section",
+          "style": "grey",
+          "blocks": [],
+          "defaultContent": [
+            "#main-content > header.section.secondary-section"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Featured teaser",
+          "selector": "#main-content > section.section:nth-of-type(1)",
+          "style": "light",
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Latest articles",
+          "selector": "#articles",
+          "style": "grey",
+          "blocks": [
+            "cards-article"
+          ],
+          "defaultContent": [
+            "#articles .utility-text-align-center"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Subscribe CTA",
+          "selector": "#main-content > section.section.accent-section",
+          "style": "accent",
+          "blocks": [],
+          "defaultContent": [
+            "#main-content > section.section.accent-section"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blog-article",
+      "urls": [
+        "https://wknd-trendsetters.site/blog/ace-pro-court-polo"
+      ],
+      "coverageGaps": [],
+      "description": "Article detail layout: hero header with title and lead image followed by long-form body content sections",
+      "blocks": [
+        {
+          "name": "hero-article",
+          "instances": [
+            "#main-content > section.section:nth-of-type(1)"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Article masthead",
+          "selector": "#main-content > section.section:nth-of-type(1)",
+          "style": "light",
+          "blocks": [
+            "hero-article"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Article body",
+          "selector": "#main-content > section.section:nth-of-type(2)",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "#main-content > section.section:nth-of-type(2)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "faq-page",
+      "urls": [
+        "https://wknd-trendsetters.site/faq"
+      ],
+      "coverageGaps": [],
+      "description": "Support layout: hero header followed by an accordion of expandable questions and a supporting cards section",
+      "blocks": [
+        {
+          "name": "hero-support",
+          "instances": [
+            "#main-content > header.section.secondary-section"
+          ]
+        },
+        {
+          "name": "accordion-faq",
+          "instances": [
+            "#main-content > section.section:nth-of-type(1) .faq-list"
+          ]
+        },
+        {
+          "name": "columns-contact",
+          "instances": [
+            "#main-content > section.section.secondary-section .grid-layout.grid-gap-xxl"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "FAQ hero",
+          "selector": "#main-content > header.section.secondary-section",
+          "style": "grey",
+          "blocks": [
+            "hero-support"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "FAQ accordion",
+          "selector": "#main-content > section.section:nth-of-type(1)",
+          "style": "light",
+          "blocks": [
+            "accordion-faq"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Contact",
+          "selector": "#main-content > section.section.secondary-section",
+          "style": "grey",
+          "blocks": [
+            "columns-contact"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Closing CTA",
+          "selector": "#main-content > section.section.accent-section",
+          "style": "accent",
+          "blocks": [],
+          "defaultContent": [
+            "#main-content > section.section.accent-section"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "category-grid",
+      "urls": [
+        "https://wknd-trendsetters.site/fashion-trends-young-adults-casual-sport"
+      ],
+      "coverageGaps": [],
+      "description": "Category overview layout: hero header followed by a long sequence of card grids grouping many teasers",
+      "blocks": [
+        {
+          "name": "hero-gallery",
+          "instances": [
+            "#main-content > header.section.secondary-section"
+          ]
+        },
+        {
+          "name": "cards-article",
+          "instances": [
+            "#trends .grid-layout.grid-gap-md"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            "#main-content > section.section.secondary-section"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero header",
+          "selector": "#main-content > header.section.secondary-section",
+          "style": "grey",
+          "blocks": [
+            "hero-gallery"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Trend grid",
+          "selector": "#trends",
+          "style": "light",
+          "blocks": [
+            "cards-article"
+          ],
+          "defaultContent": [
+            "#trends .utility-text-align-center"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Feature callout",
+          "selector": "#main-content > section.section.secondary-section",
+          "style": "grey",
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Subscribe CTA",
+          "selector": "#main-content > section.section.accent-section",
+          "style": "accent",
+          "blocks": [],
+          "defaultContent": [
+            "#main-content > section.section.accent-section"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "projectType": "da"
+  }
+}
